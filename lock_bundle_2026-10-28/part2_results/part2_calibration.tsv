@@ -1,0 +1,5 @@
+fake	sets	plain_shuffle	fame_aware_20_groups
+random	1000	0.054	0.056
+fame-only	1000	1.0	0.054
+fame-only (real strength)	1000	0.615	0.057
+planted	1000	1.0	1.0

@@ -1,0 +1,124 @@
+programs 29313; targets 2513; with full-network distance 26404
+
+== Q0 DNA-backed target (d=0) vs not, full network  (1s)
+          n_yes     n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u  p_plain_higher  p_fame_higher  p_fame_two
+I         664.0  12692.0  0.8599  0.8028    1.0712      1.0276      1.1128   1.0738     1.0309     1.1149             NaN            NaN         NaN
+II        431.0   7023.0  0.6473  0.4155    1.5580      1.4131      1.7109   1.5276     1.3767     1.6867             NaN            NaN         NaN
+III       219.0   2064.0  0.8630  0.6783    1.2723      1.1757      1.3792   1.2803     1.1835     1.3919             NaN            NaN         NaN
+I-Launch    NaN      NaN  0.4804  0.2262    2.1234      1.8257      2.4472   2.1001     1.8073     2.4315             0.0            0.0      0.0001
+   overall as launched/entered phase I: plain 2.580 (2.128-3.065), fame-adjusted 2.604 (2.166-3.102), p(fame-aware, two-sided)=0.0001
+
+== Q0 replication on Minikel's genetic-insight diseases only  (2s)
+          n_yes     n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u  p_plain_higher  p_fame_higher  p_fame_two
+I         664.0  12260.0  0.8599  0.8015    1.0730      1.0288      1.1147   1.0759     1.0328     1.1171             NaN            NaN         NaN
+II        431.0   6743.0  0.6473  0.4129    1.5679      1.4193      1.7240   1.5398     1.3874     1.6983             NaN            NaN         NaN
+III       219.0   1960.0  0.8630  0.6760    1.2766      1.1773      1.3876   1.2895     1.1902     1.4034             NaN            NaN         NaN
+I-Launch    NaN      NaN  0.4804  0.2237    2.1476      1.8422      2.4772   2.1365     1.8326     2.4739             0.0            0.0      0.0001
+   overall as launched/entered phase I: plain 2.634 (2.175-3.138), fame-adjusted 2.668 (2.216-3.179), p(fame-aware, two-sided)=0.0001
+
+fame groups (Q1 set): programs per group 1204 - 1324
+
+== Q1 MAIN: 1 link vs 2+ links (not DNA-backed), full network  (2s)
+           n_yes    n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u  p_plain_higher  p_fame_higher  p_fame_two
+I         4386.0  8306.0  0.7877  0.8107    0.9716      0.9487      0.9958   0.9523     0.9287     0.9765             NaN            NaN         NaN
+II        2362.0  4661.0  0.4094  0.4186    0.9781      0.8861      1.0672   0.9330     0.8495     1.0174             NaN            NaN         NaN
+III        662.0  1402.0  0.7115  0.6626    1.0737      0.9896      1.1569   1.0545     0.9705     1.1373             NaN            NaN         NaN
+I-Launch     NaN     NaN  0.2295  0.2249    1.0204      0.8887      1.1581   0.9369     0.8122     1.0609          0.3238         0.9204      0.1594
+   overall as launched/entered phase I: plain 0.960 (0.818-1.114), fame-adjusted 0.898 (0.770-1.038), p(fame-aware, two-sided)=0.0507
+
+== Q2 1 vs 2+ links, systematic half (all programs with a distance there)  (3s)
+          n_yes    n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u  p_plain_higher  p_fame_higher  p_fame_two
+I         931.0  8348.0  0.7691  0.8009    0.9602      0.9183      1.0000   0.9544     0.9150     0.9941             NaN            NaN         NaN
+II        512.0  4445.0  0.3711  0.4117    0.9014      0.7553      1.0480   0.8760     0.7468     1.0181             NaN            NaN         NaN
+III       125.0  1247.0  0.6720  0.7057    0.9523      0.7761      1.1093   0.9211     0.7680     1.0609             NaN            NaN         NaN
+I-Launch    NaN     NaN  0.1918  0.2327    0.8242      0.6099      1.0585   0.7701     0.5881     0.9707          0.9841         0.9985      0.0031
+   overall as launched/entered phase I: plain 0.856 (0.599-1.143), fame-adjusted 0.832 (0.598-1.095), p(fame-aware, two-sided)=0.0852
+
+== Q2 1 vs 2+ links, literature half (all programs with a distance there)  (4s)
+           n_yes    n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u  p_plain_higher  p_fame_higher  p_fame_two
+I         4027.0  8520.0  0.7914  0.8063    0.9815      0.9578      1.0068   0.9617     0.9372     0.9862             NaN            NaN         NaN
+II        2172.0  4781.0  0.4139  0.4154    0.9964      0.9013      1.0918   0.9464     0.8560     1.0366             NaN            NaN         NaN
+III        618.0  1424.0  0.7168  0.6650    1.0779      0.9948      1.1631   1.0588     0.9741     1.1456             NaN            NaN         NaN
+I-Launch     NaN     NaN  0.2348  0.2227    1.0541      0.9129      1.1994   0.9637     0.8336     1.0995          0.1257         0.7789      0.4423
+   overall as launched/entered phase I: plain 0.990 (0.842-1.160), fame-adjusted 0.925 (0.794-1.085), p(fame-aware, two-sided)=0.1608
+
+== Q2 matched programs: blind-screen half  (5s)
+          n_yes    n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u  p_plain_higher  p_fame_higher  p_fame_two
+I         930.0  8231.0  0.7688  0.7997    0.9614      0.9193      1.0013   0.9561     0.9159     0.9962             NaN            NaN         NaN
+II        511.0  4395.0  0.3699  0.4111    0.8996      0.7528      1.0487   0.8795     0.7477     1.0263             NaN            NaN         NaN
+III       124.0  1231.0  0.6694  0.7092    0.9438      0.7688      1.1003   0.9158     0.7626     1.0489             NaN            NaN         NaN
+I-Launch    NaN     NaN  0.1903  0.2332    0.8163      0.6030      1.0495   0.7701     0.5879     0.9737          0.9873         0.9985      0.0032
+   overall as launched/entered phase I: plain 0.841 (0.587-1.125), fame-adjusted 0.823 (0.586-1.084), p(fame-aware, two-sided)=0.0645
+
+== Q2 matched programs: literature half  (6s)
+           n_yes    n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u  p_plain_higher  p_fame_higher  p_fame_two
+I         3337.0  5824.0  0.7884  0.8012    0.9841      0.9560      1.0134   0.9605     0.9318     0.9894             NaN            NaN         NaN
+II        1752.0  3154.0  0.4024  0.4093    0.9831      0.8686      1.0997   0.9531     0.8434     1.0729             NaN            NaN         NaN
+III        479.0   876.0  0.7182  0.6986    1.0280      0.9347      1.1211   1.0078     0.9182     1.0962             NaN            NaN         NaN
+I-Launch     NaN     NaN  0.2278  0.2291    0.9945      0.8311      1.1658   0.9226     0.7762     1.0785          0.5359         0.9287      0.1428
+   overall as launched/entered phase I: plain 0.981 (0.801-1.193), fame-adjusted 0.930 (0.773-1.135), p(fame-aware, two-sided)=0.2834
+
+Q2 paired: fame-adjusted I-Launch RS blind-screen / literature = 0.835 (95% CI 0.626-1.074)
+matched set: rows = 1 link in blind-screen half, cols = 1 link in literature half
+ d_literature  False  True 
+d_systematic              
+False         11032   5221
+True            723   1247
+
+== Q3 fame: above-median papers vs below, within the same distance class (column rs_fame = adjusted for distance)  (6s)
+           n_yes    n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u  p_plain_higher  p_fame_higher  p_fame_two
+I         7185.0  6171.0  0.8221  0.7864    1.0454      1.0161      1.0766   1.0557     1.0259     1.0887             NaN            NaN         NaN
+II        4010.0  3444.0  0.4461  0.4088    1.0913      0.9680      1.2271   1.1069     0.9809     1.2453             NaN            NaN         NaN
+III       1271.0  1012.0  0.7065  0.6828    1.0347      0.9415      1.1371   1.0201     0.9250     1.1211             NaN            NaN         NaN
+I-Launch     NaN     NaN  0.2591  0.2195    1.1804      0.9904      1.4124   1.1920     0.9984     1.4255             0.0         0.0001      0.0002
+   overall as launched/entered phase I: plain 1.116 (0.911-1.375), fame-adjusted 1.150 (0.940-1.413), p(fame-aware, two-sided)=0.0033
+
+== Cross-check A: Q1 with each target weighted to count once  (7s)
+          n_yes    n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u
+I         844.0  1230.0  0.7387  0.7707    0.9585      0.9262      0.9902   0.9475     0.9158     0.9798
+II        593.0   917.0  0.3510  0.3813    0.9207      0.8391      1.0107   0.9177     0.8360     1.0077
+III       238.0   421.0  0.6612  0.6425    1.0290      0.9393      1.1305   1.0212     0.9268     1.1232
+I-Launch    NaN     NaN  0.1714  0.1888    0.9080      0.7962      1.0338   0.8879     0.7751     1.0117
+   overall as launched/entered phase I: plain 0.996 (0.827-1.201), fame-adjusted 0.972 (0.801-1.177)
+
+== Cross-check A: Q0 with each target weighted to count once  (8s)
+          n_yes    n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u
+I         358.0  1341.0  0.8371  0.7551    1.1086      1.0568      1.1579   1.1005     1.0513     1.1502
+II        248.0   993.0  0.6202  0.3761    1.6489      1.4758      1.8189   1.6255     1.4527     1.7879
+III       140.0   490.0  0.8532  0.6349    1.3439      1.2283      1.4666   1.3445     1.2298     1.4622
+I-Launch    NaN     NaN  0.4430  0.1803    2.4565      2.1036      2.8200   2.4052     2.0504     2.7447
+   overall as launched/entered phase I: plain 3.616 (2.999-4.341), fame-adjusted 3.494 (2.887-4.146)
+
+== Cross-check B: logistic regression, phases I/II/III stacked, n=23093, errors grouped by target
+  d0       odds ratio 2.008 (95% CI 1.645-2.450), p=6.9e-12
+  d1       odds ratio 0.893 (95% CI 0.801-0.997), p=0.043
+  fame_sd  odds ratio 1.173 (95% CI 1.095-1.255), p=4.6e-06
+  + literature links:
+  d0          odds ratio 2.021 (95% CI 1.659-2.463), p=2.9e-12
+  d1          odds ratio 0.908 (95% CI 0.814-1.012), p=0.081
+  fame_sd     odds ratio 1.189 (95% CI 1.086-1.301), p=0.00018
+  litlinks_sd odds ratio 0.973 (95% CI 0.882-1.074), p=0.59
+
+== Secondary: Q1 with fame groups by literature links  (13s)
+           n_yes    n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u  p_plain_higher  p_fame_higher  p_fame_two
+I         4386.0  8306.0  0.7877  0.8107    0.9716      0.9487      0.9958   0.9453     0.9209     0.9688             NaN            NaN         NaN
+II        2362.0  4661.0  0.4094  0.4186    0.9781      0.8861      1.0672   0.9703     0.8902     1.0584             NaN            NaN         NaN
+III        662.0  1402.0  0.7115  0.6626    1.0737      0.9896      1.1569   1.0674     0.9790     1.1503             NaN            NaN         NaN
+I-Launch     NaN     NaN  0.2295  0.2249    1.0204      0.8887      1.1581   0.9791     0.8571     1.1045          0.3284         0.6623      0.6756
+   overall as launched/entered phase I: plain 0.960 (0.818-1.114), fame-adjusted 1.004 (0.862-1.172), p(fame-aware, two-sided)=0.9636
+
+== Secondary: standard network score, closest fifth by z vs rest (not DNA-backed)  (14s)
+           n_yes     n_no  ps_yes   ps_no  rs_plain  rs_plain_l  rs_plain_u  rs_fame  rs_fame_l  rs_fame_u  p_plain_higher  p_fame_higher  p_fame_two
+I         2653.0  10039.0  0.7998  0.8036    0.9954      0.9691      1.0218   0.9917     0.9660     1.0171             NaN            NaN         NaN
+II        1464.0   5559.0  0.4467  0.4073    1.0969      1.0074      1.1919   1.0981     1.0057     1.1844             NaN            NaN         NaN
+III        472.0   1592.0  0.7436  0.6589    1.1286      1.0470      1.2185   1.1228     1.0373     1.2059             NaN            NaN         NaN
+I-Launch     NaN      NaN  0.2657  0.2156    1.2322      1.0787      1.3980   1.2226     1.0706     1.3708             0.0            0.0      0.0001
+   overall as launched/entered phase I: plain 1.266 (1.081-1.471), fame-adjusted 1.265 (1.081-1.455), p(fame-aware, two-sided)=0.0001
+
+== Calibration of the Q1 test on fake outcomes (1000 sets each; fame odds 1.5 per SD = harsh, 1.17 = strength seen in real data)  (14s)
+  random                     called significant: plain 0.054, fame-aware 0.056
+  fame-only                  called significant: plain 1.000, fame-aware 0.054
+  fame-only (real strength)  called significant: plain 0.615, fame-aware 0.057
+  planted                    called significant: plain 1.000, fame-aware 1.000
+
+done 103s -> part2_results.tsv, part2_calibration.tsv
