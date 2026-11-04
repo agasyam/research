@@ -34,3 +34,19 @@ The code was written by Claude (Anthropic) at my direction, and Grammarly fixed 
 - Minikel et al. 2024, Nature: drug programs (Citeline Pharmaprojects, pulled Dec 22, 2022) and genetic associations (github.com/ericminikel/genetic_support, CC BY 4.0)
 - Gysi et al. 2021, PNAS: human protein network (Barabasi lab)
 - NCBI gene2pubmed (downloaded Oct 26, 2026; papers counted up to PMID 36,640,000, the end of 2022)
+
+
+## Standing prediction, locked Nov 3
+
+neglected_top250_2026-11-03.tsv lists 250 target-disease pairs that have human
+genetic support, sit on proteins with no clinical programme as of Dec 2022,
+below-median research attention, and small-molecule or antibody tractability.
+
+Prediction: over the next five years these pairs will enter clinical trials at a
+lower rate than equally genetically-supported pairs on well-studied proteins,
+and those that do enter will succeed at least as often.
+
+SHA-256 neglected_top250_2026-11-03.tsv
+  29a81083f13a7b111072eb64dc09e16bfaf1947f582daa762693c708645b2cbf
+SHA-256 neglected_actionable.tsv
+  78795c281fc2075b722e7adf13adbc13100991d1204e5ac373bd9867730fe24b
