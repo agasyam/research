@@ -36,17 +36,22 @@ The code was written by Claude (Anthropic) at my direction, and Grammarly fixed 
 - NCBI gene2pubmed (downloaded Oct 26, 2026; papers counted up to PMID 36,640,000, the end of 2022)
 
 
-## Standing prediction, locked Nov 3
+## Standing prediction, locked 3 November 2026
 
-neglected_top250_2026-11-03.tsv lists 250 target-disease pairs that have human
-genetic support, sit on proteins with no clinical programme as of Dec 2022,
-below-median research attention, and small-molecule or antibody tractability.
+neglected_top250_2026-11-03.tsv lists 250 target-disease pairs with human genetic
+support, on proteins that had no clinical programme as of Dec 2022, below-median
+research attention, and small-molecule or antibody tractability.
+
+A protein counts as real here if it was detected in unbiased interaction screens
+or has Human Protein Atlas localisation - measurement-based evidence, not
+publication counts, so that understudied proteins are not excluded by the same
+bias this study measures.
 
 Prediction: over the next five years these pairs will enter clinical trials at a
 lower rate than equally genetically-supported pairs on well-studied proteins,
 and those that do enter will succeed at least as often.
 
 SHA-256 neglected_top250_2026-11-03.tsv
-  29a81083f13a7b111072eb64dc09e16bfaf1947f582daa762693c708645b2cbf
-SHA-256 neglected_actionable.tsv
-  78795c281fc2075b722e7adf13adbc13100991d1204e5ac373bd9867730fe24b
+  6ef4af38d67d2e39bc2c506ed8e19aeced7397892aea2207cedd7b18f7439cf5
+SHA-256 neglected_full_2026-11-03.tsv
+  3d309275eebd5e7cc787aa5490a04691ff6465d60add3d9159214a2f82da64b4
