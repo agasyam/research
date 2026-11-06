@@ -1,8 +1,8 @@
 # Blind drug-trial predictions (Oct 2026)
 
 ## How the test works
-- I made the predictions using only information from 2022 or earlier: drug programs as of December 2022, a protein network published in 2021, DNA links found by 2022, and papers per gene counted only up to 2022 (PubMed IDs are given out roughly in date order).
-- Every program in phase 1, 2 or 3 in December 2022 gets a predicted chance of moving up. Every target-disease pair that hadn't been tried yet gets a score.
+- Predictions were made using only information from 2022 or earlier: drug programs as of December 2022, a protein network published in 2021, DNA links found by 2022, and papers per gene counted only up to 2022 (PubMed IDs are given out roughly in date order).
+- Every program in phase 1, 2, or 3 in December 2022 gets a predicted chance of moving up. Every target-disease pair that hadn't been tried yet gets a score.
 - The files are fingerprinted (SHA-256, in MANIFEST.sha256).
 - After posting, I'll open the outcomes (Open Targets releases), record what changed, and score the predictions.
 
@@ -20,15 +20,16 @@ P4 (all four inputs) is my primary predictor, chosen on Oct 28, 2026 before any 
 - Known weakness: Pharmaprojects and Open Targets are different sources, matched by disease ID and gene, so some reporting differences are expected. I'll check a sample by hand.
 
 ## Files
-- predictions/active_programs_dec2022.tsv: the 6,560 programs in phase 1-3 in December 2022 and every model's predicted chance of moving up (P4_PRIMARY is the main one).
+- predictions/active_programs_dec2022.tsv: the 6,560 programs in phase 1-3 in Dec 2022 and every model's predicted chance of moving up (P4_PRIMARY is the main one).
 - predictions/untried_pairs_dec2022.parquet (attached to release v1.0-lock because it's too big for the repo): about 15 million untried protein-disease pairs with their inputs and P4 score.
 - predictions/model_coefficients.json: each model's inputs and weights, so any score can be recomputed.
 - part2_results/: the history test the predictor was built from.
 - code/: the scripts that made everything here.
 - MANIFEST.sha256: the fingerprint of every file. The last line is the fingerprint of my frozen research notes (Oct 26), which aren't posted.
+- neglected_full_2026-11-03.tsv and neglected_top250_2026-11-03.tsv: post-lock outputs created Nov 3.
 
 ## AI Disclosure
-The code was written by Claude (Anthropic) at my direction, and Grammarly fixed the grammar for some of my personal notes and write-ups. The research questions, decisions, analyses, planning, and write-ups are mine.
+The code was written by Claude (Anthropic) at my direction, and Grammarly fixed the grammar for some of my personal notes and planning write-ups. The research questions, decisions, analyses, planning, and write-ups are mine.
 
 ## Data
 - Minikel et al. 2024, Nature: drug programs (Citeline Pharmaprojects, pulled Dec 22, 2022) and genetic associations (github.com/ericminikel/genetic_support, CC BY 4.0)
@@ -37,20 +38,16 @@ The code was written by Claude (Anthropic) at my direction, and Grammarly fixed 
 
 
 ## Standing prediction, locked 3 November 2026
-
-neglected_top250_2026-11-03.tsv lists 250 target-disease pairs with human genetic
+Neglected_top250_2026-11-03.tsv lists 250 target-disease pairs with human genetic
 support, on proteins that had no clinical programme as of Dec 2022, below-median
 research attention, and small-molecule or antibody tractability.
-
 A protein counts as real here if it was detected in unbiased interaction screens
 or has Human Protein Atlas localisation - measurement-based evidence, not
 publication counts, so that understudied proteins are not excluded by the same
 bias this study measures.
-
 Prediction: over the next five years these pairs will enter clinical trials at a
 lower rate than equally genetically-supported pairs on well-studied proteins,
 and those that do enter will succeed at least as often.
-
 SHA-256 neglected_top250_2026-11-03.tsv
   6ef4af38d67d2e39bc2c506ed8e19aeced7397892aea2207cedd7b18f7439cf5
 SHA-256 neglected_full_2026-11-03.tsv
